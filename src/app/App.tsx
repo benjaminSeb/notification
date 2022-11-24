@@ -1,15 +1,19 @@
 import { useState } from 'react'
 import reactLogo from '../assets/react.svg'
-import './App.css'
+import AppTitle from '../design-system/components/AppTitle'
 import ChooseNotifType from '../design-system/components/ChooseNotifType'
+import './App.css'
+import { NotifTypeEnum } from './utils/notifTypeEnum'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [notifType, setNotifType] = useState<NotifTypeEnum>(NotifTypeEnum.SIMPLE);
 
   return (
     <div className="App">
-      <ChooseNotifType />
-      
+      <AppTitle />
+      <ChooseNotifType notifType={notifType} setNotifType={setNotifType} />
+
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
