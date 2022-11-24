@@ -23,7 +23,7 @@ Il contient également un dossier adr contenant les décisions d'architectures. 
 
 `npm run dev`
 
-## Run Build & Prod
+## Run Build
 
-`npm run serve`
+`npm run build`
 
