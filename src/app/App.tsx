@@ -1,9 +1,10 @@
+import { NotifTypeEnum } from '@/app/utils/NotifTypeEnum'
+import reactLogo from '@/assets/react.svg'
+import AppTitle from '@/design-system/components/AppTitle'
+import ChooseNotifType from '@/design-system/components/ChooseNotifType'
 import { useState } from 'react'
-import reactLogo from '../assets/react.svg'
-import AppTitle from '../design-system/components/AppTitle'
-import ChooseNotifType from '../design-system/components/ChooseNotifType'
 import './App.css'
-import { NotifTypeEnum } from './utils/notifTypeEnum'
+import MyForm from './Form'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <AppTitle />
       <ChooseNotifType notifType={notifType} setNotifType={setNotifType} />
+      <MyForm notifType={notifType} />
 
       <div>
         <a href="https://vitejs.dev" target="_blank">

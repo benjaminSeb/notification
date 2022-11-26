@@ -1,7 +1,7 @@
+import { NotifTypeEnum } from '@/app/utils/NotifTypeEnum';
 import i18n from '@/i18n/i18n';
 import styled from '@emotion/styled';
 import { ToggleButton, ToggleButtonGroup } from '@mui/material';
-import { NotifTypeEnum } from '../../app/utils/notifTypeEnum';
 
 const SimpleNotif = styled(ToggleButton)`
     color: green;

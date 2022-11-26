@@ -3,5 +3,11 @@
         "SMS": "SMS",
         "EMAIL": "Email",
         "LETTER": "Courier"
+    },
+    "Form": {
+        "title": "Configuration",
+        "name": "Nom",
+        "dest": "Destinataires",
+        "submit": "Envoyer"
     }
 }
