@@ -1,17 +1,16 @@
-import { NotifTypeEnum } from '@/app/utils/NotifTypeEnum';
-import i18n from '@/i18n/i18n';
+import { getI18nValueForNotifType, NotifTypeEnum } from '@/app/utils/NotifTypeEnum';
 import styled from '@emotion/styled';
 import { ToggleButton, ToggleButtonGroup } from '@mui/material';
 
-const SimpleNotif = styled(ToggleButton)`
+const SmsNotif = styled(ToggleButton)`
     color: green;
 `
 
-const MediumNotif = styled(ToggleButton)`
+const EmailNotif = styled(ToggleButton)`
     color: blue;
 `
 
-const ComplexNotif = styled(ToggleButton)`
+const LetterNotif = styled(ToggleButton)`
     color: red;
 `
 
@@ -33,9 +32,9 @@ export default function ChooseNotifType({ notifType, setNotifType }: ChooseNotif
             onChange={handleNotifType}
             aria-label="text alignment"
         >
-            <SimpleNotif value={NotifTypeEnum.SMS} size='large' >Notification {i18n.fr.NotifType.SMS}</SimpleNotif>
-            <MediumNotif value={NotifTypeEnum.EMAIL} size='large' >Notification {i18n.fr.NotifType.EMAIL}</MediumNotif>
-            <ComplexNotif value={NotifTypeEnum.LETTER} size='large' >Notification {i18n.fr.NotifType.LETTER}</ComplexNotif>
+            <SmsNotif value={NotifTypeEnum.SMS} size='large' >Notification {getI18nValueForNotifType(NotifTypeEnum.SMS)}</SmsNotif>
+            <EmailNotif value={NotifTypeEnum.EMAIL} size='large' >Notification {getI18nValueForNotifType(NotifTypeEnum.EMAIL)}</EmailNotif>
+            <LetterNotif value={NotifTypeEnum.LETTER} size='large' >Notification {getI18nValueForNotifType(NotifTypeEnum.LETTER)}</LetterNotif>
         </ToggleButtonGroup>
     )
 }

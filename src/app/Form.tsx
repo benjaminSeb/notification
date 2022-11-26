@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import {
     Field, Form, Formik
 } from 'formik';
-import { NotifTriggerEnum } from './utils/notifTriggerEnum';
+import { NotifTriggerEnum } from './utils/NotifTriggerEnum';
 import { getI18nValueForNotifType, NotifTypeEnum } from './utils/NotifTypeEnum';
 
 const FormTitle = styled('h1')({
