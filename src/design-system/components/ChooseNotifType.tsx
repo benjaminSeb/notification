@@ -1,3 +1,4 @@
+import i18n from '@/i18n/i18n';
 import styled from '@emotion/styled';
 import { ToggleButton, ToggleButtonGroup } from '@mui/material';
 import { NotifTypeEnum } from '../../app/utils/notifTypeEnum';
@@ -32,9 +33,9 @@ export default function ChooseNotifType({ notifType, setNotifType }: ChooseNotif
             onChange={handleNotifType}
             aria-label="text alignment"
         >
-            <SimpleNotif value={NotifTypeEnum.SIMPLE} size='large' >Notification {NotifTypeEnum.SIMPLE}</SimpleNotif>
-            <MediumNotif value={NotifTypeEnum.MIDDLE} size='large' >Notification {NotifTypeEnum.MIDDLE}</MediumNotif>
-            <ComplexNotif value={NotifTypeEnum.COMPLEX} size='large' >Notification {NotifTypeEnum.COMPLEX}</ComplexNotif>
+            <SimpleNotif value={NotifTypeEnum.SMS} size='large' >Notification {i18n.fr.NotifType.SMS}</SimpleNotif>
+            <MediumNotif value={NotifTypeEnum.EMAIL} size='large' >Notification {i18n.fr.NotifType.EMAIL}</MediumNotif>
+            <ComplexNotif value={NotifTypeEnum.LETTER} size='large' >Notification {i18n.fr.NotifType.LETTER}</ComplexNotif>
         </ToggleButtonGroup>
     )
 }

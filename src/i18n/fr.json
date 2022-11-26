@@ -1,0 +1,7 @@
+{
+    "NotifType": {
+        "SMS": "SMS",
+        "EMAIL": "Email",
+        "LETTER": "Courier"
+    }
+}

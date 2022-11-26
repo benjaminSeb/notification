@@ -7,7 +7,7 @@ import { NotifTypeEnum } from './utils/notifTypeEnum'
 
 function App() {
   const [count, setCount] = useState(0)
-  const [notifType, setNotifType] = useState<NotifTypeEnum>(NotifTypeEnum.SIMPLE);
+  const [notifType, setNotifType] = useState<NotifTypeEnum>(NotifTypeEnum.SMS);
 
   return (
     <div className="App">
