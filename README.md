@@ -29,7 +29,8 @@ Il contient également un dossier adr contenant les décisions d'architectures. 
 
 # ToDo List (Axes d'amélioration)
 
-- [ ] Responsive/Mutli support (voir phot/schema dans le dossier `doc`) -> breakpoints/media queries
+- [ ] Terminer l'application/l'exercice (voir `doc/Exercice Front`)
+- [ ] Responsive/Mutli support (voir photo/schema dans le dossier `doc`) -> breakpoints/media queries
 - [ ] State Management -> Redux vs [Zustand](https://github.com/pmndrs/zustand) (pour retrouver un state manager comme [PiniaJS](https://pinia.vuejs.org/))
 - [x] Equivalent Design System -> dossier `design-system`
 - [ ] Gestion d'erreur & Affichage (Toast) 
